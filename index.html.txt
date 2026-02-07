@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Propose Day 💖</title>
+<style>
+body{
+  background:pink;
+  font-family:Arial;
+  text-align:center;
+  padding-top:100px;
+}
+button{
+  padding:12px 25px;
+  font-size:18px;
+  border:none;
+  border-radius:25px;
+}
+#no{
+  position:absolute;
+}
+</style>
+</head>
+<body>
+
+<h1>Will you be my boyfriend? 💘</h1>
+
+<button onclick="yes()">Yes ❤️</button>
+<button id="no">No 😌</button>
+
+<script>
+const noBtn = document.getElementById("no");
+noBtn.addEventListener("touchstart",()=>{
+  noBtn.style.left=Math.random()*200+"px";
+  noBtn.style.top=Math.random()*200+"px";
+});
+
+function yes(){
+  document.body.innerHTML =
+  "<h1>Thank you for saying YES 🥹❤️</h1><p>You made me the happiest person 💕</p>";
+}
+</script>
+
+</body>
+</html>
